@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use('/api', schoolRoutes);
 
 app.get('/',(req,res)=>{
-  res.send("Hello World");
+  res.json({message:"Welcome to School API"});
 });
 
 app.listen(PORT, () => {
